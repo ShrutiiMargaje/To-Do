@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+  }
+
+h1{
+    color: aliceblue;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Tangerine', cursive;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.grad {
+    background-image: linear-gradient(to bottom right, #051937, #008793, #008793, #00bf72, #a8eb12 );
+    background-attachment: fixed;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 30%;
+}
+.header {
+    
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    border-radius: 0;
+  }
+
+input {
+    margin: 0;
+    border: none;
+    border-radius: 16px;
+    width: 75%;
+    padding: 20px;
+    float: left;
+    font-size: 25px;
+}
+.addBtn {
+    padding: 20px;
+    width: 25%;
+    background: #051937;
+    color: #fff;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 16%;
+  }
+
+.addBtn:hover {
+    background-color: #008793;
+}
+
+ 
+#myUL{
+    margin-left: 50px;
+    margin-right: 50px;
+}  
+  
+ul {
+    margin: 0;
+    padding: 0;
+}
+  
+  
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    border-radius: 16px;
+    margin: 20px;
+    font-size: 30px;
+    
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+ul li:hover {
+    background: rgb(204, 204, 204);
+}
+  
+  
+ul li.checked {
+    background:rgb(187, 184, 184) ;
+    color: black;
+    text-decoration: line-through;
+}
+  
+  
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: green ;
+    border-style: solid ;
+    border-width: 0 2px 2px 0;
+    box-sizing: 20px;
+    top: 14px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 23px;
+    width: 11px;
+    
+}
+  
+  
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+  
+.close:hover {
+    background-color: #f1685e;
+    color: white;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+
+
+  
+  
